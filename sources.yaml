@@ -5,6 +5,8 @@ metadata:
   namespace: default
 spec:
   interval: 5m
+  ref:
+    tag: v0.3.10
   url: http://github.com/external-secrets/external-secrets
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
@@ -14,4 +16,6 @@ metadata:
   namespace: default
 spec:
   interval: 5m
+  ref:
+    branch: main
   url: http://github.com/moolen/external-secrets-flux-example

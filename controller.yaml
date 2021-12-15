@@ -5,6 +5,7 @@ metadata:
 spec:
   interval: 5m
   path: "./consumer"
+  prune: true
   dependsOn:
   - name: crd
   sourceRef:
