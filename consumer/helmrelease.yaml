@@ -10,7 +10,7 @@ spec:
       chart: external-secrets
       version: "0.3.10"
       sourceRef:
-        kind: GitRepository
+        kind: HelmRepository
         name: eso
       interval: 1m
   values: {}

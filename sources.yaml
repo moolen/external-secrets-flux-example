@@ -19,3 +19,12 @@ spec:
   ref:
     branch: main
   url: http://github.com/moolen/external-secrets-flux-example
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: eso
+  namespace: default
+spec:
+  url: https://charts.external-secrets.io
+  interval: 10m
