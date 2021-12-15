@@ -13,4 +13,5 @@ spec:
         kind: HelmRepository
         name: eso
       interval: 1m
-  values: {}
+  values:
+    installCRDs: false
