@@ -1,0 +1,11 @@
+# deploys solely the crds
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: crd
+spec:
+  interval: 5m
+  path: "./deploy/crds"
+  sourceRef:
+    kind: GitRepository
+    name: eso

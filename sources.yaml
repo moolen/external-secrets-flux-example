@@ -1,0 +1,17 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: eso
+  namespace: default
+spec:
+  interval: 5m
+  url: http://github.com/external-secrets/external-secrets
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: example
+  namespace: default
+spec:
+  interval: 5m
+  url: http://github.com/moolen/external-secrets-flux-example

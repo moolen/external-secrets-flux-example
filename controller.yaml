@@ -1,0 +1,12 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: controller
+spec:
+  interval: 5m
+  path: "./consumer"
+  dependsOn:
+  - name: crd
+  sourceRef:
+    kind: GitRepository
+    name: example
